@@ -1,0 +1,101 @@
+@import url('https://googleapis.com');
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDesc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .80;
+  }
+}
+
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .60;
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  70% {
+  	opacity: 1;
+  	transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e6e6e6;
+}
+
+.list {
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+    animation:fadeIn .90s ease-out .40s forwards;
+	opacity: 0;
+	text-align: left;
+}
+
+h1 {
+	animation:fadeIn .40s ease-out forwards;
+}
+
+h2, h3, h4, h5, h6{
+	opacity: 0;
+	animation:fadeIn .90s ease-out .40s forwards;
+}
+
+p {
+	opacity: 0;
+	animation:fadeIn .90s ease-out .40s forwards;
+}
+
+img {
+	text-aling: center;
+}
+
+.desc {
+font-size:18px;
+font-weight:300;
+text-align: center;
+opacity: 0;
+animation:fadeInDesc .90s ease-out .40s forwards;
+}
+
+.pop {
+	animation: pop 0.4s ease-out forwards;
+}
+
+footer {
+text-align:center;
+    padding:16px;
+    opacity:0;
+    animation:fadeInFooter .90s ease-out .40s forwards;
+}

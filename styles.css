@@ -99,3 +99,13 @@ text-align:center;
     opacity:0;
     animation:fadeInFooter .90s ease-out .40s forwards;
 }
+
+/* kill me please */
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 24px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
